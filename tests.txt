@@ -1,0 +1,10 @@
+1- ESCOLHER BENCHMARK - TSB?
+2- Positional Encoding - TimeGPT
+3- Normalização após Stack - todos
+4- CNN entre stacks - TimeGPT
+5- Input Layers. The job of the input layers is to preprocess the time-series into input tokens to the transformer layers.
+Wefirst break the input into contiguous non-overlapping patches. Then each patch is processed by a Residual Block
+into a vector of size model_dim. Along with the input, we also supply a binary padding mask m1:L where 1 denotes
+that the corresponding input in y1:L should be ignored and vice-versa. The Residual Block is essentially a Multi-layer
+Perceptron (MLP) block with one hidden layer with a skip connection, similar to that defined in [DKL+23]. - TimesFM
+6- Rpbust Scaling - Chronos
